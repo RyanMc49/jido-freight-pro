@@ -1,0 +1,53 @@
+{
+  "name": "jido-freight-pro",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
+    "dev:frontend": "vite",
+    "dev:backend": "tsx server/index.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node prod-server.mjs",
+    "cap:sync": "npx cap sync",
+    "cap:open": "npx cap open android",
+    "cap:build": "vite build && npx cap sync && npx cap copy",
+    "cap:add": "npx cap add android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/splash-screen": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.2",
+    "@tailwindcss/vite": "^4.2.4",
+    "@tanstack/react-query": "^5.67.2",
+    "@trpc/client": "^11.7.2",
+    "@trpc/react-query": "^11.7.2",
+    "@trpc/server": "^11.7.2",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lucide-react": "^1.14.0",
+    "mapbox-gl": "^3.11.0",
+    "puppeteer": "^24.43.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "sonner": "^2.0.7",
+    "tailwindcss": "^4.2.4",
+    "wouter": "^3.9.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vite": "^8.0.10"
+  }
+}
